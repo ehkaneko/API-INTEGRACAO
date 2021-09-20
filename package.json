@@ -1,0 +1,20 @@
+{
+  "name": "api-integracao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Eduardo Kaneko",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.6",
+    "nodemon": "^2.0.12",
+    "npmlog": "^5.0.1"
+  }
+}
