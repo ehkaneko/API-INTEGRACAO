@@ -1,0 +1,256 @@
+{
+  "info": {
+    "_postman_id": "f2efd1fa-e590-4c4b-abf8-57887a281df8",
+    "name": "API Integração",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "fornecedor",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"cnpj\": \"33014556000196\",\n\t\"nome\": \"Lojas Americanas S.A.\"\n}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/fornecedor",
+          "host": ["{{API_URL}}"],
+          "path": ["fornecedor"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fornecedor",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/fornecedor",
+          "host": ["{{API_URL}}"],
+          "path": ["fornecedor"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fornecedor/:cnpj",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/fornecedor/produto/47960950000121",
+          "host": ["{{API_URL}}"],
+          "path": ["fornecedor", "produto", "47960950000121"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fornecedor",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"cnpj\": \"00776574000156\",\n\t\"nome\": \"SHOPTIME.COM\"\n}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/fornecedor",
+          "host": ["{{API_URL}}"],
+          "path": ["fornecedor"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fornecedor/:cnpj",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/fornecedor/00776574000156",
+          "host": ["{{API_URL}}"],
+          "path": ["fornecedor", "00776574000156"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "produto",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"codigo\": \"p3-0002\",\n\t\"nome\": \"Produto 3\",\n\t\"cnpj\": \"00776574000660\"\n}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/produto",
+          "host": ["{{API_URL}}"],
+          "path": ["produto"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "produto",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/produto",
+          "host": ["{{API_URL}}"],
+          "path": ["produto"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "produto/:codigo",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/produto/p2-0002",
+          "host": ["{{API_URL}}"],
+          "path": ["produto", "p2-0002"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "produto",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"codigo\": \"p1-0002\",\n\t\"nome\": \"Produto 1\",\n\t\"cnpj\": \"00776574000660\"\n}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/produto",
+          "host": ["{{API_URL}}"],
+          "path": ["produto"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "produto/:codigo",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/produto/p1-0002",
+          "host": ["{{API_URL}}"],
+          "path": ["produto", "p1-0002"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fornecedor/produto/:cnpj",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/fornecedor/produto/03499243000104",
+          "host": ["{{API_URL}}"],
+          "path": ["fornecedor", "produto", "03499243000104"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_URL",
+      "value": "http://localhost:1025"
+    }
+  ]
+}
